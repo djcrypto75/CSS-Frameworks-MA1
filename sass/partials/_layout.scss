@@ -1,0 +1,31 @@
+.main {
+   text-align: center;
+}
+.row {
+   justify-content: center;
+   &__box {
+      height: 200px;
+      border-radius: 15px;
+      background-color: $color-light-grey;
+      margin: 20px;
+      flex: 0 0 200px;
+      &--bg--white {
+         background-color: $white;
+         border: 2px solid $color-pink;
+      }
+      &--bg--purple {
+         background-color: $color-pink;
+         border: 2px solid $color-white;
+      }
+   }
+}
+@media only screen and (max-width: 991px) {
+   body {
+      .row {
+         &__box {
+            height: 800px;
+            flex: 0 0 800px;
+         }
+      }
+   }
+}
